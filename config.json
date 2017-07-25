@@ -1,0 +1,5 @@
+{
+  "googleMaps": {
+    "distanceMatrix": "http://maps.googleapis.com/maps/api/distancematrix/json"
+  }
+}
