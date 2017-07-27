@@ -8,7 +8,7 @@ export default {
   name: 'error',
   data () {
     return {
-      msg: 'Error processing request. Please try again later'
+      msg: 'Error processing request. Please add more details to locations'
     }
   }
 }
