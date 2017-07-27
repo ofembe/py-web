@@ -12758,7 +12758,7 @@ exports = module.exports = __webpack_require__(1)(undefined);
 
 
 // module
-exports.push([module.i, "\na[data-v-3593f8a0] {\n  color: green;\n}\n", ""]);
+exports.push([module.i, "\n.distance-item[data-v-3593f8a0] {\n  color: green;\n}\n", ""]);
 
 // exports
 
@@ -12786,7 +12786,9 @@ exports.push([module.i, "\na[data-v-3593f8a0] {\n  color: green;\n}\n", ""]);
 
 "use strict";
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_vm._v("\n  The shortest distance is " + _vm._s(_vm.distance.distance) + " "), _c('br'), _vm._v("\n  Duration is " + _vm._s(_vm.distance.duration) + " by car\n")])
+  return _c('div', {
+    staticClass: "distance-item"
+  }, [_vm._v("\n  The shortest distance is " + _vm._s(_vm.distance.distance) + " "), _c('br'), _vm._v("\n  Duration is " + _vm._s(_vm.distance.duration) + " by car\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -12904,7 +12906,12 @@ exports.push([module.i, "\n.error-message[data-v-b439f626] {\n  color: red;\n}\n
 //
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  name: 'error'
+  name: 'error',
+  data() {
+    return {
+      msg: 'Error processing request. Please try again later'
+    };
+  }
 });
 
 /***/ }),
@@ -12915,7 +12922,7 @@ exports.push([module.i, "\n.error-message[data-v-b439f626] {\n  color: red;\n}\n
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "error-message"
-  }, [_vm._v("\n  Error processing request. Please try again later\n")])
+  }, [_vm._v("\n  " + _vm._s(_vm.msg) + "\n")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -13033,7 +13040,12 @@ exports.push([module.i, "\n.error-message[data-v-6f92fa64] {\n  color: red;\n}\n
 //
 
 /* harmony default export */ __webpack_exports__["a"] = ({
-  name: 'validation'
+  name: 'validation',
+  data() {
+    return {
+      msg: 'All fields are required'
+    };
+  }
 });
 
 /***/ }),
@@ -13044,7 +13056,7 @@ exports.push([module.i, "\n.error-message[data-v-6f92fa64] {\n  color: red;\n}\n
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "error-message"
-  }, [_vm._v("\n  All fields are required\n")])
+  }, [_vm._v("\n" + _vm._s(_vm.msg) + "\n")])
 }
 var staticRenderFns = []
 render._withStripped = true

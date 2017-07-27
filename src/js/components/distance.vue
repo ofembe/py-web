@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="distance-item">
     The shortest distance is {{distance.distance}} <br>
     Duration is {{distance.duration}} by car
   </div>
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped>
-a {
+.distance-item {
   color: green;
 }
 </style>

@@ -1,11 +1,16 @@
 <template>
   <div class="error-message">
-    All fields are required
+  {{msg}}
   </div>
 </template>
 <script>
 export default {
-  name: 'validation'
+  name: 'validation',
+  data () {
+    return {
+      msg: 'All fields are required'
+    }
+  }
 }
 </script>
 

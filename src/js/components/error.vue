@@ -1,11 +1,16 @@
 <template>
   <div class="error-message">
-    Error processing request. Please try again later
+    {{msg}}
   </div>
 </template>
 <script>
 export default {
-  name: 'error'
+  name: 'error',
+  data () {
+    return {
+      msg: 'Error processing request. Please try again later'
+    }
+  }
 }
 </script>
 
